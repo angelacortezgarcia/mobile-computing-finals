@@ -8,88 +8,71 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.mlabs.bbm.firstandroidapp.MainActivity"
-    android:background="@android:color/darker_gray">
-
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnLog"
-        android:onClick="onButtonClick"
-        style="@style/Animation.AppCompat.Dialog"
-        android:textColor="@color/abc_primary_text_material_dark"
-        android:height="50dp"
-        android:textSize="35sp"
-        android:text="@string/log_in"
-        android:width="330dp"
-        android:background="@color/accent_material_light"
-        android:layout_marginTop="68dp"
-        android:layout_below="@+id/TFPword"
-        android:layout_alignLeft="@+id/TFPword"
-        android:layout_alignStart="@+id/TFPword" />
-
-    <Button
-        style="@style/Animation.AppCompat.Dialog"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnCancel"
-        android:onClick="clickExit"
-        android:textColor="@color/abc_primary_text_disable_only_material_dark"
-        android:height="50dp"
-        android:textSize="35sp"
-        android:text="@android:string/cancel"
-        android:width="330dp"
-        android:background="@color/accent_material_dark"
-        android:layout_below="@+id/btnLog"
-        android:layout_alignLeft="@+id/btnLog"
-        android:layout_alignStart="@+id/btnLog"
-        android:layout_marginTop="44dp" />
+    android:background="@android:color/white">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/username"
-        android:id="@+id/textView2"
-        android:textColor="@android:color/background_light"
-        android:textStyle="bold"
-        android:typeface="normal"
-        android:background="@color/material_deep_teal_200"
-        android:layout_alignParentTop="true"
+        android:text="Username"
+        android:id="@+id/textView_username"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="75dp" />
-
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/TFUname"
-        android:width="300dp"
-        android:inputType="text"
-        android:layout_below="@+id/textView2"
-        android:layout_toRightOf="@+id/textView2"
-        android:layout_toEndOf="@+id/textView2" />
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/password"
-        android:id="@+id/textView3"
-        android:textColor="@android:color/background_light"
-        android:textStyle="bold"
-        android:typeface="normal"
-        android:layout_below="@+id/TFUname"
-        android:layout_toLeftOf="@+id/TFUname"
-        android:layout_toStartOf="@+id/TFUname" />
+        android:text="Password"
+        android:id="@+id/textView_password"
+        android:layout_below="@+id/textView_username"
+        android:layout_alignLeft="@+id/textView_username"
+        android:layout_alignStart="@+id/textView_username"
+        android:layout_marginTop="25dp" />
 
     <EditText
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_user"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/TFPword"
-        android:layout_below="@+id/textView3"
-        android:layout_toRightOf="@+id/textView3"
-        android:layout_toEndOf="@+id/textView3" />
+        android:id="@+id/editText_password"
+        android:layout_alignBottom="@+id/textView_password"
+        android:layout_alignLeft="@+id/editText_user"
+        android:layout_alignStart="@+id/editText_user" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button_submit"
+        android:layout_below="@+id/textView_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="358dp"
+            android:id="@+id/imageView2"
+            android:background="@drawable/logo2" />
+    </TableRow>
 </RelativeLayout>
