@@ -9,8 +9,90 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.mlabs.bbm.firstandroidapp.MainActivity">
 
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="182dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/wholev2"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:id="@+id/email"
+        android:hint="Email"
+        android:textColorHint="#342923"
+        android:textColor="#342923"
+        android:background="@drawable/ghost_button"
+        android:padding="12dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="5dp"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <!--   android:drawableLeft="@drawable/mailv2"-->
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:textColorHint="#342923"
+        android:textColor="#342923"
+        android:layout_below="@+id/email"
+        android:background="@drawable/ghost_button"
+        android:padding="12dp"
+        android:drawablePadding="13dp"
+        android:singleLine="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+<!---        android:drawableLeft="@drawable/lock"-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:singleLine="true"
+        android:textColor="#efefef"
+        android:background="#342923"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        />
+    <!--android:background="#342923"
+    android:onClick="gotoNextPage"-->
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Sign Up"
+        android:id="@+id/txtsignup"
+        android:textColor="#342923"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:id="@+id/btnShow"
+        android:layout_above="@+id/btnLogin"
+        android:layout_alignRight="@+id/email"
+        android:layout_alignEnd="@+id/email" />
 </RelativeLayout>
