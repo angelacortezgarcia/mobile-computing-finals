@@ -67,8 +67,8 @@ public class signupactivity extends AppCompatActivity {
                     txtusername.requestFocus();
                 }
                 else if(loginDataBaseAdapter.validateExisting(txtemail.getText().toString())) {
-                    txtusername.setError("username or email already exist");
-                    txtusername.requestFocus();
+                    txtemail.setError("username or email already exist");
+                    txtemail.requestFocus();
                 }
                 else {
 //                    loginDataBaseAdapter.insertEntry(email.getText().toString(), password.getText().toString(),getCurrentDateTime());
