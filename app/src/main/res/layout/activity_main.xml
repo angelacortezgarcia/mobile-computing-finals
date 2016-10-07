@@ -23,7 +23,7 @@
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:id="@+id/email"
-        android:hint="Email"
+        android:hint="Email or Username"
         android:textColorHint="#342923"
         android:textColor="#342923"
         android:background="@drawable/ghost_button"
