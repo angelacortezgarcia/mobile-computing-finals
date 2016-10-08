@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
                     Intent i=new Intent(getApplicationContext(),Main2Activity.class);
                     startActivity(i);
+                    finish();
                 }
                 else
                 {
