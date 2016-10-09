@@ -71,11 +71,12 @@ public class signupactivity extends AppCompatActivity {
                     txtemail.requestFocus();
                 }
                 else {
+//                    finish();
 //                    loginDataBaseAdapter.insertEntry(email.getText().toString(), password.getText().toString(),getCurrentDateTime());
                     loginDataBaseAdapter.registeruser(txtemail.getText().toString(), txtpassword.getText().toString(), txtfname.getText().toString(),txtlname.getText().toString(),txtusername.getText().toString());
                     Toast.makeText(getApplicationContext(), "Added Account.", Toast.LENGTH_LONG).show();
-                    Intent i = new Intent(signupactivity.this, MainActivity.class);
-                    startActivity(i);
+//                    Intent i = new Intent(signupactivity.this, MainActivity.class);
+//                    startActivity(i);
                     finish();
                 }
             }
